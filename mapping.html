@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mapping</title>
+    </head>
+    <body>
+        <h1>My image</h1>
+        <!-- Image map: shoulder → W3Schools, hand → LinkedIn, background → email -->
+        <img src="sofiya-image.jpeg" alt="Profile photo" width="200" height="250" usemap="#profilemap">
+
+        <map name="profilemap">
+            <area shape="circle" coords="100,60,40" href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer" alt="W3Schools (shoulder)" title="Open W3Schools (shoulder)">
+            <!-- Background (full image) → Email (fallback; placed last) -->
+            <area shape="rect" coords="0,0,200,250" href="mailto:shaiksofiyasumaya@gmail.com" alt="Email" title="Send email to Sofiya">
+        </map>
+
+        <!-- Tip: adjust coords to fit your actual image size; circle 'x,y,r', rect 'left,top,right,bottom' -->
+    </body>
+</html>
